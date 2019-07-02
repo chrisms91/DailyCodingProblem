@@ -6,6 +6,8 @@ namespace Problems._01_99._01_19
 {
 	public class Problem01
 	{
+		// Time: O(n) one pass of foreach loop
+		// Space: O(n) for maintaining hashset
 		public static bool ContainsTwoSum(int[] nums, int sum)
 		{
 			var hashSet = new HashSet<int>();
