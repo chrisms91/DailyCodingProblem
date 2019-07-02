@@ -1,2 +1,2 @@
 # DailyCodingProblem
-https://www.dailycodingproblem.com/
+This repository contains solutions for <a href="https://www.dailycodingproblem.com/">Daily Coding Problem</a> tasks
