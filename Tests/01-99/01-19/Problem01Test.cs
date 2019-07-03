@@ -1,5 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Problems._01_99._01_19;
+using Problems._01_99._01_19.Problem01;
 
 namespace Tests
 {
@@ -14,7 +14,7 @@ namespace Tests
 			int k = 17;
 
 			// Act
-			var result = Problem01.ContainsTwoSum(nums, k);
+			var result = Solution.ContainsTwoSum(nums, k);
 
 			// Assert
 			Assert.IsTrue(result);
@@ -28,7 +28,7 @@ namespace Tests
 			int k = 14;
 
 			// Act
-			var result = Problem01.ContainsTwoSum(nums, k);
+			var result = Solution.ContainsTwoSum(nums, k);
 
 			// Assert
 			Assert.IsFalse(result);

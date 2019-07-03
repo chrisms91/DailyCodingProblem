@@ -15,7 +15,7 @@ namespace Tests._01_99._01_19
 			int[] expectedRes = { 120, 60, 40, 30, 24 };
 
 			// Act
-			int[] result = Problem02.ProductArrExceptSelfBF(nums);
+			int[] result = Solution.ProductArrExceptSelfBF(nums);
 			
 			// Assert
 			CollectionAssert.AreEqual(expectedRes, result);

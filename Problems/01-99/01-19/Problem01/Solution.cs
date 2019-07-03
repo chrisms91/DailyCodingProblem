@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Problems._01_99._01_19
+namespace Problems._01_99._01_19.Problem01
 {
-	public class Problem01
+	public class Solution
 	{
 		// Time: O(n) one pass of foreach loop
 		// Space: O(n) for maintaining hashset

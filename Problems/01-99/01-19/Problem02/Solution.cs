@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Problems._01_99._01_19.Problem02
 {
-	public class Problem02
+	public class Solution
 	{
 
 		// time: O(n)

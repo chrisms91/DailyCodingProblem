@@ -1,4 +1,5 @@
 ﻿using System;
+using Problems.Common;
 
 namespace Problems
 {
