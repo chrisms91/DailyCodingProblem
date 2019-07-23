@@ -19,6 +19,7 @@ namespace Problems._01_99._01_19.Problem08
 			return CountUnivalTree(root);
 		}
 
+		// Time: O(n^2)
 		private int CountUnivalTree(Node<T> root)
 		{
 			var result = 0;
