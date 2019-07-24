@@ -30,5 +30,26 @@ namespace Ctci.Ch_01._Arrays_and_Strings.Q1_01_Is_Unique
 			}
 			return true;
 		}
+
+		// Time: o(nlogn)
+		// Space: o(n)  use array to sort string..
+		public static bool IsUnique1(string str)
+		{
+			if (str == null) return false;
+
+			var sortedStr = ctci.Library.AssortedMethods.SortString(str);
+
+			for (var i = 0; i < sortedStr.Length - 1; i++)
+			{
+				if (sortedStr[i] == sortedStr[i+1])
+				{
+					return false;
+				}
+			}
+			return true;
+		}
+
+		// what if you can't use additional data structure?
+		
 	}
 }

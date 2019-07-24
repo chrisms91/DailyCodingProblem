@@ -14,9 +14,26 @@ namespace Tests.Ctci_Test.Ch_01._Arrays_and_Strings
 
 			// Act
 			var res = Solution.IsUnique(str);
+			var res1 = Solution.IsUnique1(str);
 
 			// Assert
 			Assert.AreEqual(true, res);
+			Assert.AreEqual(true, res1);
 		} 
+
+		[TestMethod]
+		public void IsUnique_ShouldReturnFalse()
+		{
+			// Assign
+			string str = "apple";
+
+			// Act
+			var res = Solution.IsUnique(str);
+			var res1 = Solution.IsUnique1(str);
+
+			// Assert
+			Assert.AreEqual(false, res);
+			Assert.AreEqual(false, res1);
+		}
 	}
 }
