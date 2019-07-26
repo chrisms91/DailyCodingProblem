@@ -21,7 +21,7 @@ namespace Problems._01_99._01_19.Problem03
 
 			sb.Append(Serialize(node.Left));
 			sb.Append(Serialize(node.Right));
-
+       
 			return sb.ToString();
 		}
 

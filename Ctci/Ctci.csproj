@@ -5,4 +5,7 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Ch 01. Arrays and Strings\Q1_03_URLify\" />
+  </ItemGroup>
 </Project>
