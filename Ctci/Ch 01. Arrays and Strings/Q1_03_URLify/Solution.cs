@@ -22,18 +22,18 @@ namespace Ctci.Ch_01._Arrays_and_Strings.Q1_03_URLify
 			var spaceCount = CountWhiteSpace(input);
 			var index = length + spaceCount * 2; // space needed to replace with '%20'
 
-			for (var i = length - 1; i >= 0; i++)
+			for (var i = length - 1; i >= 0; i--)
 			{
-				if (i != ' ')
+				if (input[i] != ' ')
 				{
-					input[index] = input[i];
+					input[index - 1] = input[i];
 					index--;
 				}
 				else
 				{
-					input[index] = '0';
-					input[index - 1] = '2';
-					input[index - 2] = '%';
+					input[index - 1] = '0';
+					input[index - 2] = '2';
+					input[index - 3] = '%';
 					index -= 3;
 				}
 			}

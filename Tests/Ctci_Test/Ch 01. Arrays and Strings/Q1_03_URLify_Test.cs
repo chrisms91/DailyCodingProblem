@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using Ctci.Ch_01._Arrays_and_Strings.Q1_03_URLify;
+using System.Linq;
 
 namespace Tests.Ctci_Test.Ch_01._Arrays_and_Strings
 {
@@ -22,9 +23,14 @@ namespace Tests.Ctci_Test.Ch_01._Arrays_and_Strings
 
 			// Act
 			Solution.ReplaceSpaces(charArray, inputStr.Length);
+            var sb = new StringBuilder();
+            foreach (var c in charArray)
+            {
+                if (c != '\0') sb.Append(c);
+            }
 
-			// Assert
-			Assert.AreEqual("abc%20d%20e", new string(charArray));
+            // Assert
+			Assert.AreEqual("abc%20d%20e", sb.ToString());
 		}
 	}
 }
