@@ -7,6 +7,6 @@
 
   <ItemGroup>
     <Folder Include="Ch 01. Arrays and Strings\Q1_03_URLify\" />
-    <Folder Include="Ch 01. Arrays and Strings\Q1_04_One_Away\" />
+    <Folder Include="Ch 01. Arrays and Strings\Q1_05_One_Away\" />
   </ItemGroup>
 </Project>

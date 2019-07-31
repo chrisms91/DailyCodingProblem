@@ -1,8 +1,10 @@
 ﻿using System;
-namespace Ctci.Ch01.ArraysandStrings.Q1_04_One_Away
+namespace Ctci.Ch01.ArraysandStrings.Q1_05_One_Away
 {
     public class Solution
     {
+        // Time: O(n)
+        // Space: O(1)
         public static bool IsOneAway(string str1, string str2)
         {
             var str1Length = str1.Length;
