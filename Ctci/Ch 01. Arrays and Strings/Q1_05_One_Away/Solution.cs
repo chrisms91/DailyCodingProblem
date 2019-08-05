@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Ctci.Ch01.ArraysandStrings.Q1_05_One_Away
+namespace Ctci.Ch_01._Arrays_and_Strings.Q1_05_One_Away
 {
     public class Solution
     {
@@ -18,12 +18,12 @@ namespace Ctci.Ch01.ArraysandStrings.Q1_05_One_Away
             else if (str1Length + 1 == str2Length)
             {
                 // check for remove/add
-                return IsOneInsertAway(str2, str1);
+                return IsOneInsertAway(str1, str2);
             }
             else if (str2Length + 1 == str1Length)
             {
                 // check for remove/add
-                return IsOneInsertAway(str1, str2);
+                return IsOneInsertAway(str2, str1);
             }
             return false;
         }
