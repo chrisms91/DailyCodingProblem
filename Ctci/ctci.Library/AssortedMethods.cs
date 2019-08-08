@@ -12,5 +12,10 @@ namespace Ctci.ctci.Library
 			Array.Sort(charArr);
 			return new string(charArr);
 		}
+
+        public static bool IsSubString(string str, string sub)
+        {
+            return str.IndexOf(sub, StringComparison.CurrentCultureIgnoreCase) >= 0;
+        }
 	}
 }
