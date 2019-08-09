@@ -7,6 +7,8 @@ namespace Ctci.Ch_02._Linked_Lists.Q2_01_Remove_Duplication
 {
 	public static class Solution
 	{
+		// Time: O(n)
+		// Space: O(n)
 		public static LinkedListNode RemoveDup(LinkedListNode node)
 		{
 			if (node == null) return node;
@@ -32,6 +34,35 @@ namespace Ctci.Ch_02._Linked_Lists.Q2_01_Remove_Duplication
 				}
 			}
 
+			return node;
+		}
+
+		// Time: O(n^2)
+		// Space: O(1)
+		public static LinkedListNode RemoveDupWithOutBuffer(LinkedListNode node)
+		{
+			if (node == null) return node;
+
+			var current = node;
+			
+			while(current != null)
+			{
+				var runner = current;
+				
+				while(runner.Next != null)
+				{
+					if (runner.Next.Data == current.Data)
+					{
+						runner.Next = runner.Next.Next;
+					}
+					else
+					{
+						runner = runner.Next;
+					}
+				}
+
+				current = current.Next;
+			}
 			return node;
 		}
 	}
