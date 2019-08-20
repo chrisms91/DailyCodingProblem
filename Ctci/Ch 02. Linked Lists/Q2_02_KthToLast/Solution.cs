@@ -49,5 +49,28 @@ namespace Ctci.Ch02.LinkedLists.Q2_02_KthToLast
 
             return index;
         }
+
+        public static LinkedListNode ReturnKthToListIterative(LinkedListNode head, int k)
+        {
+            var p1 = head;
+            var p2 = head;
+
+            // Move p1 to k
+            for (var i = 0; i < k; i ++)
+            {
+                if (p1 == null) return null;
+                p1 = p1.Next;
+            }
+
+            // Move p1 & p2 until p1 hits null
+            while (p1 != null)
+            {
+                p1 = p1.Next;
+                p2 = p2.Next;
+            }
+
+            // return p2
+            return p2;
+        }
     }
 }
