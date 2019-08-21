@@ -5,6 +5,8 @@ namespace Ctci.Ch02.LinkedLists.Q2_03_Delete_Middle_Node
 {
     public static class Solution
     {
+        // Time: O(n)
+        // Space: O(n)
         public static void DeleteMiddleNode(LinkedListNode head)
         {
             if (head == null) return;
@@ -13,7 +15,7 @@ namespace Ctci.Ch02.LinkedLists.Q2_03_Delete_Middle_Node
             var fast = head;
             var prev = head;
 
-            while(fast.Next.Next != null || fast.Next != null)
+            while(fast.Next.Next != null && fast.Next != null)
             {
                 prev = slow;
                 slow = slow.Next;
