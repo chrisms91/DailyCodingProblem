@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.Text;
 
 namespace Ctci.ctci.Library
@@ -25,11 +27,11 @@ namespace Ctci.ctci.Library
 			n.Next = end;
 		}
 
-		public static LinkedListNode CreateLinkedList(int[] nums)
+		public static LinkedListNode CreateLinkedList(IList<int> nums)
 		{
 			LinkedListNode n = new LinkedListNode(nums[0]);
 			LinkedListNode head = n;
-			for (int i = 1; i < nums.Length; i++)
+			for (int i = 1; i < nums.Count; i++)
 			{
 				LinkedListNode next = new LinkedListNode(nums[i]);
 				n.Next = next;

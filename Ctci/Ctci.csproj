@@ -11,5 +11,6 @@
     <Folder Include="Ch 01. Arrays and Strings\Q1_09_IsRotation\" />
     <Folder Include="Ch 02. Linked Lists\Q2_02_KthToLast\" />
     <Folder Include="Ch 02. Linked Lists\Q2_03_Delete_Middle_Node\" />
+    <Folder Include="Ch 02. Linked Lists\Q2_04_Partition\" />
   </ItemGroup>
 </Project>

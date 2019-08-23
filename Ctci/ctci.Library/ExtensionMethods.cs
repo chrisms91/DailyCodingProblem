@@ -17,5 +17,15 @@ namespace Ctci.ctci.Library
 			sb.Append("null");
 			return sb.ToString();
 		}
+
+        public static void AppendToTail(this LinkedListNode n, int data)
+        {
+            LinkedListNode end = new LinkedListNode(data);
+            while (n.Next != null)
+            {
+                n = n.Next;
+            }
+            n.Next = end;
+        }
 	}
 }
