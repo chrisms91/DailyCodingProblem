@@ -7,6 +7,7 @@ namespace Ctci.Ch02.LinkedLists.Q2_03_Delete_Middle_Node
     {
         // Time: O(n)
         // Space: O(n)
+        // When you have access to the head
         public static void DeleteMiddleNode(LinkedListNode head)
         {
             if (head == null) return;
@@ -23,6 +24,18 @@ namespace Ctci.Ch02.LinkedLists.Q2_03_Delete_Middle_Node
             }
 
             prev.Next = slow.Next;
+        }
+
+        // When you only have access to single node.
+        public static bool DeleteNode(LinkedListNode node)
+        {
+            if (node == null || node.Next == null) return false;
+
+            LinkedListNode next = node.Next;
+            node.Data = next.Data;
+            node.Next = next.Next;
+
+            return true;
         }
     }
 }
