@@ -7,6 +7,8 @@ namespace Ctci.Ch02.LinkedLists.Q2_04_Partition
 {
 	public class Solution
 	{
+		// Time: O(n)
+		// Space: O(n)
 		public static LinkedListNode PartitionLinkedList(LinkedListNode head, int partition)
 		{
 			var leftList = new List<int>();
