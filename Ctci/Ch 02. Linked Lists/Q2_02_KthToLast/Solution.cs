@@ -13,7 +13,7 @@ namespace Ctci.Ch02.LinkedLists.Q2_02_KthToLast
 
             // Calculate Length of Linked List
             var ptr = node;
-            var length = 1;
+            var length = 0;
 
             while (ptr != null)
             {
@@ -24,7 +24,7 @@ namespace Ctci.Ch02.LinkedLists.Q2_02_KthToLast
             // move ptr forward to Length - k
             var position = length - k;
             var targetNode = node;
-            while (position >= 0)
+            while (position > 0)
             {
                 targetNode = targetNode.Next;
                 position--;
@@ -50,7 +50,7 @@ namespace Ctci.Ch02.LinkedLists.Q2_02_KthToLast
             return index;
         }
 
-        public static LinkedListNode ReturnKthToListIterative(LinkedListNode head, int k)
+        public static LinkedListNode ReturnKthToLastTwoPointers(LinkedListNode head, int k)
         {
             var p1 = head;
             var p2 = head;
