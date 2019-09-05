@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using Ctci.ctci.Library;
 
-namespace Ctci.Ch02.LinkedLists.Q2_05_SumLists
+namespace Ctci.Ch_02._Linked_Lists.Q2_05_SumLists
 {
 	public class Solution
 	{
@@ -36,7 +36,7 @@ namespace Ctci.Ch02.LinkedLists.Q2_05_SumLists
 			for (var i = length - 2; i >= 0; i--)
 			{
 				var next = new LinkedListNode(nums[i]);
-				n.Next = next;
+				n.Next = next;                                                                                                                                                                                                                                                                                                                                                                                                            
 				n = next;
 			}
 

@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Ctci.ctci.Library;
-using Ctci.Ch02.LinkedLists.Q2_03_Delete_Middle_Node;
+using Ctci.Ch_02._Linked_Lists.Q2_03_Delete_Middle_Node;
 
 
 namespace Tests.Ctci_Test.Ch02.LinkedLists

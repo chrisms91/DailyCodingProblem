@@ -1,7 +1,7 @@
 ﻿using System;
 using Ctci.ctci.Library;
 
-namespace Ctci.Ch02.LinkedLists.Q2_02_KthToLast
+namespace Ctci.Ch_02._Linked_Lists.Q2_02_KthToLast
 {
     public class Solution
     {

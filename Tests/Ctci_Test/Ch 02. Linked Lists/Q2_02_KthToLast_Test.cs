@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using Ctci.ctci.Library;
-using Ctci.Ch02.LinkedLists.Q2_02_KthToLast;
+using Ctci.Ch_02._Linked_Lists.Q2_02_KthToLast;
 
 
 

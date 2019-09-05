@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Ctci.ctci.Library;
 
-namespace Ctci.Ch02.LinkedLists.Q2_04_Partition
+namespace Ctci.Ch_02._Linked_Lists.Q2_04_Partition
 {
 	public class Solution
 	{

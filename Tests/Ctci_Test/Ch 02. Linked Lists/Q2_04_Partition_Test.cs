@@ -3,7 +3,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
 using System.Text;
-using Ctci.Ch02.LinkedLists.Q2_04_Partition;
+using Ctci.Ch_02._Linked_Lists.Q2_04_Partition;
 
 namespace Tests.Ctci_Test.Ch_02._Linked_Lists
 {
