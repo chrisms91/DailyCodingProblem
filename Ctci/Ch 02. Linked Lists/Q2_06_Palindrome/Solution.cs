@@ -8,13 +8,15 @@ namespace Ctci.Ch_02._Linked_Lists.Q2_06_Palindrome
 {
 	public class Solution
 	{
+        // Time: O(n)
+        // Space: O(n)
 		public static bool IsPalindrome(LinkedListNode head)
 		{
 			if (head == null) return false;
 
 			// Initialize
 			var curr = head;
-			var stack = new Stack();
+			var stack = new Stack<int>();
 
 			// Iterate through linkedlist and push node to the stack
 			while (curr != null)
@@ -26,6 +28,10 @@ namespace Ctci.Ch_02._Linked_Lists.Q2_06_Palindrome
 			curr = head;
 			while (curr != null)
 			{
+                if (stack.Count == 0)
+                {
+                    return false;
+                }
 				var popped = stack.Pop();
 				if (curr.Data != popped)
 				{
@@ -33,6 +39,7 @@ namespace Ctci.Ch_02._Linked_Lists.Q2_06_Palindrome
 				}
 			}
 
+            return stack.Count == 0;
 		}
 	}
 }
