@@ -10,18 +10,37 @@ namespace Ctci.Ch_02._Linked_Lists.Q2_07_Intersection
 		public LinkedListNode CheckIntersection(LinkedListNode headA, LinkedListNode headB)
 		{
 			// calculate length of each list, get the last node of the list and compare
-			(int lengthA, LinkedListNode lastNodeA) resultA = CalculateLengthAndGetLastNode(headA);
-			(int lengthB, LinkedListNode lastNodeB) resultB = CalculateLengthAndGetLastNode(headB);
+			(int length, LinkedListNode lastNode) resultA = CalculateLengthAndGetLastNode(headA);
+			(int length, LinkedListNode lastNode) resultB = CalculateLengthAndGetLastNode(headB);
 
 			// if last node is different, return null..
-			if (resultA.lastNodeA != resultB.lastNodeB) return null;
+			if (resultA.lastNode != resultB.lastNode) return null;
 
 			// if length is diff, move pointer of longer list forward to match the starting point
+			var longer = resultA.length > resultB.length ? headA : headB;
+			var shorter = resultA.length > resultB.length ? headB : headA;
 
 			// iterate pointers and check if there is intersection (ptrA.next == ptrB.next)
+			var diff = Math.Abs(resultA.length - resultB.length);
+			if (diff > 0)
+			{
+				var curr = longer;
+				while (diff > 0 && curr != null)
+				{
+					diff--;
+					curr = curr.Next;
+				}
+				longer = curr;
+			}
+
+			while (longer != shorter)
+			{
+				longer = longer.Next;
+				shorter = shorter.Next;
+			}
 
 			// return pointer if there is intersection.
-			return null;
+			return longer;
 		}
 
 		private (int length, LinkedListNode lastNode) CalculateLengthAndGetLastNode(LinkedListNode head)
