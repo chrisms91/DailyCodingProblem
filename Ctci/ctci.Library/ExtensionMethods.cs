@@ -18,14 +18,14 @@ namespace Ctci.ctci.Library
 			return sb.ToString();
 		}
 
-        public static void AppendToTail(this LinkedListNode n, int data)
+    public static void AppendToTail(this LinkedListNode n, int data)
+    {
+        LinkedListNode end = new LinkedListNode(data);
+        while (n.Next != null)
         {
-            LinkedListNode end = new LinkedListNode(data);
-            while (n.Next != null)
-            {
-                n = n.Next;
-            }
-            n.Next = end;
+            n = n.Next;
         }
+        n.Next = end;
+    }
 	}
 }
