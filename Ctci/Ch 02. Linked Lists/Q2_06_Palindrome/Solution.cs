@@ -8,8 +8,8 @@ namespace Ctci.Ch_02._Linked_Lists.Q2_06_Palindrome
 {
 	public class Solution
 	{
-        // Time: O(n)
-        // Space: O(n)
+		// Time: O(n)
+		// Space: O(n)
 		public static bool IsPalindrome(LinkedListNode head)
 		{
 			if (head == null) return false;
@@ -28,18 +28,19 @@ namespace Ctci.Ch_02._Linked_Lists.Q2_06_Palindrome
 			curr = head;
 			while (curr != null)
 			{
-                if (stack.Count == 0)
-                {
-                    return false;
-                }
+				if (stack.Count == 0)
+				{
+					return false;
+				}
 				var popped = stack.Pop();
 				if (curr.Data != popped)
 				{
 					return false;
 				}
+				curr = curr.Next;
 			}
 
-            return stack.Count == 0;
+			return stack.Count == 0;
 		}
 	}
 }
