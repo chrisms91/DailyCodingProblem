@@ -14,11 +14,14 @@ namespace Tests.Ctci_Test.Ch_02._Linked_Lists
 			var test1 = LinkedListNode.CreateLinkedList(new int[] { 1, 1, 1, 1, 1, 1 });
 
 			// Act
-			var result = Solution.RemoveDup(test);
-			var result1 = Solution.RemoveDup(test1);
+			//var result = Solution.RemoveDup(test);
+			//var result1 = Solution.RemoveDup(test1);
 
-			// Assert
-			Assert.AreEqual("2 -> 3 -> 1 -> 4 -> 5 -> null", result.LinkedListToString());
+            var result = Solution.RemoveDupTwo(test);
+            var result1 = Solution.RemoveDupTwo(test1);
+
+            // Assert
+            Assert.AreEqual("2 -> 3 -> 1 -> 4 -> 5 -> null", result.LinkedListToString());
 			Assert.AreEqual("1 -> null", result1.LinkedListToString());
 		}
 	}

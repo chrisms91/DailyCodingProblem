@@ -37,6 +37,32 @@ namespace Ctci.Ch_02._Linked_Lists.Q2_01_Remove_Duplication
 			return node;
 		}
 
+        // Time: O(n)
+        // Space: O(n)
+        // Shorter with one pointer.
+        public static LinkedListNode RemoveDupTwo(LinkedListNode node)
+        {
+            if (node == null) return node;
+            var hs = new HashSet<int>();
+            var curr = node;
+            hs.Add(curr.Data);
+
+            while(curr.Next != null)
+            {
+                if (!hs.Contains(curr.Next.Data))
+                {
+                    hs.Add(curr.Next.Data);
+                    curr = curr.Next;
+                }
+                else
+                {
+                    curr.Next = curr.Next.Next;
+                }
+            }
+
+            return node;
+        }
+
 		// Time: O(n^2)
 		// Space: O(1)
 		public static LinkedListNode RemoveDupWithOutBuffer(LinkedListNode node)
