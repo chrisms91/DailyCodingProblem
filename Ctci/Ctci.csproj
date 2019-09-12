@@ -12,5 +12,7 @@
     <Folder Include="Ch 02. Linked Lists\Q2_02_KthToLast\" />
     <Folder Include="Ch 02. Linked Lists\Q2_03_Delete_Middle_Node\" />
     <Folder Include="Ch 02. Linked Lists\Q2_04_Partition\" />
+    <Folder Include="Ch 03. Stacks and Queues\" />
+    <Folder Include="Ch 03. Stacks and Queues\Exceptions\" />
   </ItemGroup>
 </Project>
