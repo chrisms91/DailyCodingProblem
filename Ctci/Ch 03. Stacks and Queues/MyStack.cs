@@ -17,7 +17,7 @@ namespace Ctci.Ch03.StacksandQueues
             }
         }
 
-        protected StackNode top;
+        private StackNode top;
 
         public T Pop()
         {
