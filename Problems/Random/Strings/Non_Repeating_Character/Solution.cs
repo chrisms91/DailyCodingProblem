@@ -16,7 +16,8 @@ namespace Problems.Random.Strings.Non_Repeating_Character
 			{
 				if (dict.ContainsKey(chr))
 				{
-					var temp = dict[chr]++;
+					var temp = dict[chr];
+					temp++;
 					dict[chr] = temp;
 				}
 				else
