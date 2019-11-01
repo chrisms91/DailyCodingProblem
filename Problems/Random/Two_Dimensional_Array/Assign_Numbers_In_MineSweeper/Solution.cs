@@ -45,6 +45,7 @@ namespace Problems.Random.Two_Dimensional_Array.Assign_Numbers_In_MineSweeper
 				}
 				Console.WriteLine();
 			}
+			Console.WriteLine();
 		}
 	}
 }
