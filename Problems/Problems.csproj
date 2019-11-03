@@ -5,4 +5,7 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Random\Two_Dimensional_Array\Rotate_90_InPlace\" />
+  </ItemGroup>
 </Project>
