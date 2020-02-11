@@ -17,4 +17,8 @@
     <ProjectReference Include="..\Problems\Problems.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="InterviewBitTest\" />
+    <Folder Include="InterviewBitTest\ArraysTest\" />
+  </ItemGroup>
 </Project>
