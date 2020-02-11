@@ -9,6 +9,9 @@
     <Folder Include="Random\Two_Dimensional_Array\Rotate_90_InPlace\" />
     <Folder Include="Random\Linked_Lists_And_Trees\Nth_From_End\" />
     <Folder Include="Random\Linked_Lists_And_Trees\Is_This_Binary_Search_Tree\" />
+    <Folder Include="InterviewBit\" />
+    <Folder Include="InterviewBit\Arrays\" />
+    <Folder Include="InterviewBit\Arrays\AddOneToNumber\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Ctci\Ctci.csproj" />
